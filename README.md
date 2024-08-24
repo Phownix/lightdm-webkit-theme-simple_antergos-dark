@@ -9,11 +9,7 @@ This is the default theme included with [lightdm-webkit2-greeter](http://github.
 
 ### Screenshots
 <center>
-<img src="img/screenshot1.jpg" alt="screenshot1" />
-<hr/>
-<img src="img/screenshot2.jpg" alt="screenshot2" />
-<hr/>
-<img src="img/screenshot3.jpg" alt="screenshot3" />
+<img src="img/screenshot1.png" alt="screenshot1" />
 </center>
 
 ### Prerequisites

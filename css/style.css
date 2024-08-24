@@ -1,33 +1,3 @@
-/*
- *
- * Copyright © 2015-2016 Antergos
- *
- * style.css
- *
- * This file is part of lightdm-webkit2-greeter
- *
- * lightdm-webkit2-greeter is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License,
- * or any later version.
- *
- * lightdm-webkit2-greeter is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * The following additional terms are in effect as per Section 7 of the license:
- *
- * The preservation of all legal notices and author attributions in
- * the material or in the Appropriate Legal Notices displayed
- * by works containing it is required.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-/* Global Styles */
-
 @font-face {
 	font-family: 'Open Sans';
 	font-weight: 400;
@@ -96,7 +66,7 @@ html,
 body {
 	height: 100%;
 	width: 100%;
-	background-color: #000000;
+	background-color: #030709;
 	font-family: "Open Sans", sans-serif;
 }
 
@@ -104,7 +74,7 @@ i {
 	font-size: 17px;
 }
 
-h3, .panel-heading {
+h3 {
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	text-align: center;
@@ -116,7 +86,6 @@ a {
 }
 
 /* Background Switcher */
-
 .bg-switch {
 	position: relative;
 	top: 0;
@@ -217,7 +186,6 @@ a {
 }
 
 /* Full Page Image Header Area */
-
 .header {
 	display: table;
 	height: 100%;
@@ -251,15 +219,14 @@ a {
 }
 
 /* Clock Widget */
-
 .time {
 	font-family: "Open Sans", sans-serif;
 	font-size: 96px;
 	font-weight: 300;
 	line-height: 1em;
 	text-decoration: none;
-	color: #3D73C5;
-	background-color: rgb(252, 247, 247);
+	color: #3CB5B3;
+	background-color: #111111;
 	transition: 1s ease-out;
 	position: relative;
 	top: 11px;
@@ -282,7 +249,7 @@ a {
 }
 
 .time-panel {
-	background-color: rgb(252, 247, 247) !important;
+	background-color: #111111 !important;
 	border-color: transparent !important;
 }
 
@@ -295,17 +262,11 @@ a {
 }
 
 /* Login Dialog */
-
 .welcome {
 	font-weight: 500;
 	font-size: 17px;
 	position: relative;
 	right: 9px;
-}
-
-.panel-heading img {
-	max-height: 30px;
-	width: auto;
 }
 
 .login-wrapper {
@@ -316,10 +277,6 @@ a {
 .login-cell {
 	display: table-cell;
 	vertical-align: middle;
-}
-
-.login-box {
-	min-height: 275px;
 }
 
 #login {
@@ -343,7 +300,8 @@ a {
 }
 
 .panel-default {
-	background-color: rgb(252, 247, 247);
+	background-color: #111111;
+	color: white;
 }
 
 .badge {
@@ -361,15 +319,9 @@ a {
 	margin-top: 3px;
 }
 
-.panel-heading {
-	padding: 10px 20px !important;
-	background: #F1F1F1;
-	border-bottom-color: rgba(221,221,221, 0.35) !important;
-}
-
 .panel-footer {
 	height: 50px;
-	background: #F1F1F1;
+	background: #030303;
 	border-top-color: rgba(221,221,221, 0.35);
 }
 
@@ -377,12 +329,12 @@ a {
 	margin-bottom: 10px;
 }
 
-#sessions, #actionsArea {
-	transition: all ease 3s;
+#actionsArea {
+	transition: all ease 1s;
 }
 
 .panel-body {
-	background-color: rgb(252, 247, 247);
+	background-color: #111111;
 	padding: 10px;
 }
 
@@ -402,38 +354,33 @@ div.password, div.status, div.timer {
 	text-align: center;
 	position: relative;
 	display: none;
-	width: 47%;
+	width: 60%;
 	margin: 0 auto;
 }
 
 #passwordField {
+	background-color: transparent !important;
 	margin-left: 1px;
 }
 
-.input-group-btn {
-	width: auto;
-}
-.form-control {
-	border-color: transparent !important;
-}
 
 input.password.form-control {
-	box-shadow: 0 1px #dddddd;
-	margin-top: -1px;
+	border-color: #3cb5b380;
 }
 input.password.form-control:focus {
-	-webkit-box-shadow: inset 0 -2px 0 #2196F3 !important;
-	box-shadow: inset 0 -2px 0 #2196F3 !important;
-	border-bottom: 2px solid #2196F3 !important;
-	margin-top: 0;
+	border-color: #3CB5B3;
+	box-shadow: none;
 }
 
 #passwordArea .btn {
+	border-color: transparent;
+	background-color: #3cb5b380;
 	padding: 7px 12px;
 }
 
-#passwordArea .btn-group > .btn {
-	float: initial;
+#passwordArea .btn:hover{
+	border-color: #3CB5B3;
+	background-color: #3CB5B3;
 }
 
 #logArea {
@@ -569,11 +516,11 @@ a.list-group-item:focus, a.list-group-item.hovered {
 	border-color: transparent;
 	outline: none;
 	margin: 0px 0;
-	background: #FFFFFF;
+	background: #181818;
 }
 
 a.list-group-item.hover:not(:focus) {
-	background: #f0f0f0;
+	background: #1b1b1b;
 }
 
 a.list-group-item:focus:before, a.list-group-item:focus:after,
@@ -657,5 +604,3 @@ a.list-group-item:focus:after, a.list-group-item:hover:after, a.list-group-item.
 .close:hover {
 	opacity: 1;
 }
-
-
